@@ -18,6 +18,7 @@ namespace RazorPagesMovieMicrosoftTutorial
 
             var app = builder.Build();
 
+            // Seed para o banco de dados.
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
